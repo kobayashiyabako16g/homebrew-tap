@@ -7,10 +7,10 @@ class DppCli < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kobayashiyabako16g/dpp-cli/releases/download/v1.0.2/dpp-cli-macos-aarch64.tar.gz"
-      sha256 "62b682487f013b6d5c428fa38e96ab1885d453832c4ce3f2b19cb983564f266a"
+      sha256 "20ec65aaa07997d779ceea706d12965c6aeeda25ee125c56d2ab96567893d23c"
     else
       url "https://github.com/kobayashiyabako16g/dpp-cli/releases/download/v1.0.2/dpp-cli-macos-x86_64.tar.gz"
-      sha256 "78d4d030d822c07d49a863e4391de0c21ac31e79e923e47de0e8db93a6aadfbd"
+      sha256 "d334e0de7461915974f6b1c5379cf2c6dc4e3c7e27ba1b7ee47077a92c51a8a8"
     end
   end
 
@@ -24,12 +24,12 @@ class DppCli < Formula
   def install
     if OS.mac?
       if Hardware::CPU.arm?
-        bin.install "dpp-macos-aarch64" => "dpp-cli"
+        bin.install "dpp-cli-macos-aarch64" => "dpp-cli"
       else
-        bin.install "dpp-macos-x86_64" => "dpp-cli"
+        bin.install "dpp-cli-macos-x86_64" => "dpp-cli"
       end
     elsif OS.linux?
-      bin.install "dpp-linux-x86_64" => "dpp-cli"
+      bin.install "dpp-cli-linux-x86_64" => "dpp-cli"
     end
   end
 
