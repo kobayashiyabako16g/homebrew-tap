@@ -1,22 +1,22 @@
 class DppCli < Formula
   desc "CLI tool for managing dpp.vim plugins."
   homepage "https://github.com/kobayashiyabako16g/dpp-cli"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kobayashiyabako16g/dpp-cli/releases/download/v1.0.3/dpp-cli-macos-aarch64.tar.gz"
-      sha256 "61cb7527a3e9489e4289ff1cb0f1e985c6655c5cb6f0d2be383f33e6db536acb"
+      url "https://github.com/kobayashiyabako16g/dpp-cli/releases/download/v1.0.4/dpp-cli-macos-aarch64.tar.gz"
+      sha256 "902eeaa43964598180442b789d3f4158f55b73af8046cdd943c161576e315ed7"
     else
-      url "https://github.com/kobayashiyabako16g/dpp-cli/releases/download/v1.0.3/dpp-cli-macos-x86_64.tar.gz"
-      sha256 "7642a31de29cfe5439245f29a905c22930c9b12f0b25006f2eb4948e7652fc27"
+      url "https://github.com/kobayashiyabako16g/dpp-cli/releases/download/v1.0.4/dpp-cli-macos-x86_64.tar.gz"
+      sha256 "ca3c1f40a1bea643095683be242b1bfd005042a1a9b8b2dfe5779c925c4b234b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kobayashiyabako16g/dpp-cli/releases/download/v1.0.3/dpp-cli-linux-x86_64.tar.gz"
+      url "https://github.com/kobayashiyabako16g/dpp-cli/releases/download/v1.0.4/dpp-cli-linux-x86_64.tar.gz"
       sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
