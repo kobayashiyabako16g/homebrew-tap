@@ -1,19 +1,19 @@
 class Craber < Formula
   desc "Visualize ER diagrams from SQL DDL or a live database"
   homepage "https://github.com/kobayashiyabako16g/craber"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kobayashiyabako16g/craber/releases/download/v0.4.0/craber-aarch64-apple-darwin.tar.xz"
-    sha256 "132d8e6b3acd218871dcd7942070015f4b44f8afa1ee3836e0660e9d6eb2e216"
+    url "https://github.com/kobayashiyabako16g/craber/releases/download/v0.5.0/craber-aarch64-apple-darwin.tar.xz"
+    sha256 "c51cca3778847c9ccd5eda4ebc8da22e2b466e7d39ce4f38546b4dc6ef8bdabd"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kobayashiyabako16g/craber/releases/download/v0.4.0/craber-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "6b44622390d429b724c7006fde0cfe5026347d30707e0ef2ab529e9faf998fc3"
+      url "https://github.com/kobayashiyabako16g/craber/releases/download/v0.5.0/craber-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "e36225e483b2b37c8ddefed80e998be1ea5d008e3ad1aa87313fde35559176d9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kobayashiyabako16g/craber/releases/download/v0.4.0/craber-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "5691d781fc0dbcb200092e704af7f43a70f3fc8609355254494a0980964f747e"
+      url "https://github.com/kobayashiyabako16g/craber/releases/download/v0.5.0/craber-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "7914068d603e81c8d06f250074063eebe2343af62c440e177be8897af23f2034"
     end
   end
   license "MIT"
